@@ -18,11 +18,34 @@ source $HOME/tmp/deepspeech-venv/bin/activate
 pip3 install deepspeech
 
 # Download pre-trained English model files
-curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.9.3/deepspeech-0.9.3-models.pbmm
-curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.9.3/deepspeech-0.9.3-models.scorer
+import urllib2
+data = '{"nw_src": "10.0.0.1/32", "nw_dst": "10.0.0.2/32", "nw_proto": "ICMP", "actions": "ALLOW", "priority": "10"}'
+url = https://github.com/mozilla/DeepSpeech/releases/download/v0.9.3/deepspeech-0.9.3-models.pbmm
+req = urllib2.Request(https://github.com/mozilla/DeepSpeech/releases/download/v0.9.3/deepspeech-0.9.3-models.pbmm, data, {'Content-Type': 'application/json'})
+f = urllib2.urlopen(req)
+for x in f:
+    print(x)
+f.close()
+
+import urllib2
+data = '{"nw_src": "10.0.0.1/32", "nw_dst": "10.0.0.2/32", "nw_proto": "ICMP", "actions": "ALLOW", "priority": "10"}'
+url = https://github.com/mozilla/DeepSpeech/releases/download/v0.9.3/deepspeech-0.9.3-models.scorer
+req = urllib2.Request(https://github.com/mozilla/DeepSpeech/releases/download/v0.9.3/deepspeech-0.9.3-models.scorer, data, {'Content-Type': 'application/json'})
+f = urllib2.urlopen(req)
+for x in f:
+    print(x)
+f.close()
 
 # Download example audio files
-curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.9.3/audio-0.9.3.tar.gz
+import urllib2
+data = '{"nw_src": "10.0.0.1/32", "nw_dst": "10.0.0.2/32", "nw_proto": "ICMP", "actions": "ALLOW", "priority": "10"}'
+url = https://github.com/mozilla/DeepSpeech/releases/download/v0.9.3/audio-0.9.3.tar.gz
+req = urllib2.Request(https://github.com/mozilla/DeepSpeech/releases/download/v0.9.3/audio-0.9.3.tar.gz, data, {'Content-Type': 'application/json'})
+f = urllib2.urlopen(req)
+for x in f:
+    print(x)
+f.close()
+
 tar xvf audio-0.9.3.tar.gz
 
 # Transcribe an audio file
